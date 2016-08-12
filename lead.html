@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>lead retrieval</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+
+    <style>
+      .slick-slide {
+        opacity: 0;
+      }
+
+      .slick-slide.slick-active {
+        transition: opacity 1s !important;
+        opacity: 1;
+      }
+
+      .slick-slide[aria-hidden="false"] {
+        transition: opacity .3s;
+        opacity: 1;
+      }
+
+      .slick-slide[aria-hidden="true"] {
+        transition: opacity .3s;
+        opacity: 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header  -->
+      <header class="header js-header">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+
+            <img src="img/logo-black.svg" alt="">
+          </a>
+          <button class="btn-nav js-nav-btn"><span></span></button>
+          <div class="header__nav js-nav">
+            <div class="mob-logo">
+              <a href="#">
+                <img src="img/logo-black.svg" alt="">
+              </a>
+            </div>
+            <div class="header__nav-in">
+              <a href="#" class="header__btn"><span>BUILD APP FOR FREE</span></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link_drop js-drop-link"><span>Products</span></a>
+                    <div class="dropdown js-dropdown">
+                      <i class="dropdown__triangle"></i>
+                      <ul class="dropdown__list">
+                        <li>
+                          <a href="#">
+                            <div class="dropdown__title">Mobile Event Apps</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="dropdown__title">Lead Retrieval </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="dropdown__title">Event Websites</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"><a href="#" class="nav__link"><span>How-it-Works</span></a></li>
+                  <li class="nav__item"><a href="#" class="nav__link"><span>Pricing</span></a></li>
+                  <li class="nav__item"><a href="#" class="nav__link"><span>Customers</span></a></li>
+                  <li class="nav__item"><a href="#" class="nav__link"><span>About</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <div class="hero hero_lead">
+        <div class="hero__video">
+          <div class="hero__img" style="background-image: url(img/hero-bg.png);"></div>
+          <video autoplay="autoplay" loop="loop" class="js-video">
+      <source src="" data-src="video/Prreview_home_page.mp4">
+      <!-- 	<source src="https://www.azendoo.com/assets/home/hero-1bc1b74ae81061a595f911ff23eb4696.webm"> -->
+    </video>
+        </div>
+        <div class="hero__inner">
+          <div class="hero__top">
+            <button class="btn-play btn-play_big">
+        <svg class="icon icon-play"><use xlink:href="img/sprite.svg#icon-play"></use></svg>
+
+        <i></i>
+      </button>
+            <h1>More than just Lead Retrieval</h1>
+            <h4>Drive ROI for your exhibitors and sponsors while creating a new <br>
+        revenue stream for your event.</h4>
+          </div>
+        </div>
+      </div>
+
+      <!--start links-->
+      <div class="links">
+        <div class="links__inner">
+          <ul>
+            <li><a class="is-active links__link" href="#">Driven Data</a></li>
+            <li><a class="links__link" href="#">Easy to</a></li>
+            <li><a class="links__link" href="#">Monetization</a></li>
+          </ul>
+          <a href="#" class="btn-next btn-next_blue links__btn"><span>SIGN UP FOR FREE</span><svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+</a>
+
+        </div>
+      </div>
+      <!--end links-->
+
+      <!--start benefits-->
+      <div class="benefits">
+        <div class="benefits__inner">
+          <h2>Drive ROI for your exhibitors</h2>
+          <h6>Give your attendees the reason to come back next year. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h6>
+
+          <div class="benefits__tabs">
+            <div class="benefits__tab-item js-benefits-preview">
+              <button class="circle"><svg class="icon icon-easy"><use xlink:href="img/sprite.svg#icon-easy"></use></svg>
+</button>
+              <p>Easy to Use</p>
+            </div>
+            <div class="benefits__tab-item js-benefits-preview">
+              <button class="circle"><svg class="icon icon-idea"><use xlink:href="img/sprite.svg#icon-idea"></use></svg>
+</button>
+              <p>Social Insights</p>
+            </div>
+            <div class="benefits__tab-item js-benefits-preview">
+              <button class="circle"><svg class="icon icon-cogwheel"><use xlink:href="img/sprite.svg#icon-cogwheel"></use></svg>
+</button>
+              <p>CRM Sync</p>
+            </div>
+            <div class="benefits__tab-item js-benefits-preview">
+              <button class="circle"><svg class="icon icon-follow"><use xlink:href="img/sprite.svg#icon-follow"></use></svg>
+</button>
+              <p>Follow-Ups</p>
+            </div>
+          </div>
+
+          <div class="benefits__slider-wrap">
+            <!--<button class="left benefits__prev js-benefits-prev"><svg class="icon icon-left"><use xlink:href="img/sprite.svg#icon-left"></use></svg>
+</button>-->
+            <!--<button class="right benefits__next js-benefits-next"><svg class="icon icon-right"><use xlink:href="img/sprite.svg#icon-right"></use></svg>
+</button>-->
+
+            <div class="benefits__slider js-benefits-slider">
+
+              <div class="capture">
+                <div class="capture__img-wrap">
+                  <div class="capture__img-box">
+                    <img class="capture__phone-big" src="img/cellphone-big.png" alt="">
+                    <img class="capture__phone-small" src="img/cellphone-small.png" alt="">
+                  </div>
+                  <div class="capture__mob-box">
+                    <img class="capture__phone-big capture__phone-big_mob" src="img/cellphone-big.png" alt="">
+                    <img class="capture__phone-small capture__phone-small_mob" src="img/cellphone-small.png" alt="">
+                  </div>
+                </div>
+                <div class="capture__text-wrap">
+                  <h3>Effortless lead capture</h3>
+                  <p>Use lead capture app on your device. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                  <div class="capture__logos">
+                    <span><svg class="icon icon-apple"><use xlink:href="img/sprite.svg#icon-apple"></use></svg>
+</span>
+                    <span><svg class="icon icon-android"><use xlink:href="img/sprite.svg#icon-android"></use></svg>
+</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="insights">
+                <div class="insights__items-wrap">
+                  <div class="insights__items js-inisghts-slider">
+                    <!--start social insights-item-->
+
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_mess"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Catherine Moran</p>
+                        <p class="insights__action-text">write a message</p>
+                      </div>
+                      <button class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+</button>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user2.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_like"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Thomas Hampton</p>
+                        <p class="insights__action-text">liked your post</p>
+                      </div>
+                      <button class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+</button>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user3.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_post"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Amy Young</p>
+                        <p class="insights__action-text">posted a photo</p>
+                      </div>
+                      <div class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+                      </div>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user4.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_comment"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Alan Grant</p>
+                        <p class="insights__action-text">commented your post</p>
+                      </div>
+                      <div class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+                      </div>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_mess"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Catherine Moran</p>
+                        <p class="insights__action-text">write a message</p>
+                      </div>
+                      <button class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+</button>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user2.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_like"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Thomas Hampton</p>
+                        <p class="insights__action-text">liked your post</p>
+                      </div>
+                      <button class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+</button>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user3.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_post"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Amy Young</p>
+                        <p class="insights__action-text">posted a photo</p>
+                      </div>
+                      <div class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+                      </div>
+                    </div>
+                    <!--end social insights item-->
+
+                    <!--start social insights-item-->
+                    <div class="insights__item">
+                      <div class="insights__user">
+                        <img class="insights__item-img" src="img/user4.png" alt="">
+                        <i class="insights__action-ico insights__action-ico_comment"></i>
+                      </div>
+                      <div class="insights__item-text-wrap">
+                        <p class="insights__user-name">Alan Grant</p>
+                        <p class="insights__action-text">commented your post</p>
+                      </div>
+                      <div class="insights__button"><svg class="icon icon-soc-button"><use xlink:href="img/sprite.svg#icon-soc-button"></use></svg>
+                      </div>
+                    </div>
+                    <!--end social insights item-->
+
+                  </div>
+                </div>
+
+                <div class="insights__text-wrap">
+                  <h3>Social Insights</h3>
+                  <p>Social insight help you to track lead social activity. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+
+              </div>
+              <div class="crm">
+                <div class="crm__mob-img"></div>
+                <div class="crm__block">
+                  <div class="crm__box-wrap">
+                    <i class="crm__sync-cloud"></i>
+                    <i class="crm__shadow-circle"></i>
+                    <div class="crm__box js-rotate-box">
+                      <div class="circle crm__circle crm__circle_links">
+                        <i class="crm__circle-ico"><svg class="icon icon-links"><use xlink:href="img/sprite.svg#icon-links"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_notepad">
+                        <i class="crm__circle-ico"><svg class="icon icon-notepad"><use xlink:href="img/sprite.svg#icon-notepad"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_star">
+                        <i class="crm__circle-ico"><svg class="icon icon-star-transp"><use xlink:href="img/sprite.svg#icon-star-transp"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_inst">
+                        <i class="crm__circle-ico"><svg class="icon icon-inst"><use xlink:href="img/sprite.svg#icon-inst"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_tel">
+                        <i class="crm__circle-ico"><svg class="icon icon-tel"><use xlink:href="img/sprite.svg#icon-tel"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_convert">
+                        <i class="crm__circle-ico"></i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_people">
+                        <i class="crm__circle-ico"><svg class="icon icon-people"><use xlink:href="img/sprite.svg#icon-people"></use></svg>
+</i>
+                      </div>
+
+                      <div class="circle crm__circle crm__circle_talks">
+                        <i class="crm__circle-ico"><svg class="icon icon-talks"><use xlink:href="img/sprite.svg#icon-talks"></use></svg>
+</i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="crm__text-wrap">
+                  <h3>CRM Sync</h3>
+                  <p>All useful data can be exported to CRM system. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.</p>
+                  <span class="crm__text-span">INTEGRATIONS:</span>
+                  <div class="crm__platforms">
+                    <i class="crm__salesforce"></i>
+                    <div class="crm__marketo-wrap">
+                      <i class="crm__marketo"></i>
+                      <p class="crm__hint">Coming Soon</p>
+                    </div>
+
+                    <div class="crm__cvent-wrap">
+                      <i class="crm__cvent"></i>
+                      <p class="crm__hint">Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="real">
+                <div class="real__box-wrap">
+                  <div class="real__box">
+
+                    <div class="real__item real__item_first">
+                      <img class="real__item-img" src="img/user4.png" alt="">
+                      <div class="real__text-holder">
+                        <p>Hi, Catherine. I have noticed you Like my post about our data acquisition system. Would you mind if I arrange for you and your colleagues a personal presentation of our product.</p>
+                      </div>
+                    </div>
+
+                    <div class="real__item real__item_right real__item_sec">
+                      <img class="real__item-img" src="img/user.png" alt="">
+                      <div class="real__text-holder">
+                        <p>Hi, Tony! That would be great, how about 11am tomorrow?</p>
+                      </div>
+                    </div>
+
+                    <div class="real__item real__item_third">
+                      <img class="real__item-img" src="img/user4.png" alt="">
+                      <div class="real__text-holder">
+                        <p>I think, this time suits me fine. See you tomorrow!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="real__text-wrap">
+                  <h3>Real-Time Interaction</h3>
+                  <p>Use info in lead social account to make connections. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end benefits-->
+
+    <!--start instr-->
+    <div class="instr">
+      <div class="instr__inner">
+        <h2>Launching and Managing lead retrival for your event is as easy as pie</h2>
+        <div class="instr__add">
+
+          <div class="instr__add-box">
+            <div class="instr__add-cursor cursor js-cursor"></div>
+
+            <!--event wrap-->
+            <div class="instr__event-wrap">
+              <p>Select Event:</p>
+
+              <div class="select js-select-event">
+
+                <div class="select__inner js-select-event-inner">
+                  <span class="select__current js-select-event-cur">Select</span>
+                  <div class="select__dropdown js-select-event-dd">
+                    <div class="select__option js-select-event-opt">Tech Conference</div>
+                    <div class="select__option js-select-event-opt">IT Day Conference</div>
+                  </div>
+                </div>
+                <div class="select__button"><i class="select__arr-down js-select-event-arr"></i></div>
+
+              </div>
+            </div>
+            <!--end event wrap-->
+
+            <!--start model wrap-->
+            <div class="instr__model-wrap">
+              <p>Pricing Model</p>
+              <div class="select js-select-model">
+
+                <div class="select__inner js-select-model-inner">
+                  <span class="select__current js-select-model-cur">Select</span>
+                </div>
+                <div class="select__button"><i class="select__arr-down js-select-model-arr"></i></div>
+                <div class="select__dropdown js-select-model-dd">
+                  <div class="select__option js-select-model-opt">Flat Fee</div>
+                  <div class="select__option js-select-model-opt">Ravenue Share</div>
+                </div>
+              </div>
+
+            </div>
+            <!--end model wrap  -->
+            <button class="instr__add-box-submit" type="submit">Add Lead Retrieval</button>
+
+          </div>
+          <div class="instr__add-text-wrap">
+            <h3>1. Add Lead Retrieval to your event </h3>
+            <p> How to start with lead retrieval on event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+        </div>
+
+        <div class="instr__spons">
+          <div class="instr__spons-box-wrap">
+            <div class="instr__spons-box">
+              <i class="instr__line instr__line_sprout"></i>
+              <i class="instr__line instr__line_terra"></i>
+              <i class="instr__line instr__line_soc-inst"></i>
+              <i class="instr__line instr__line_zsoc"></i>
+              <i class="instr__line instr__line_cloud"></i>
+              <i class="instr__line instr__line_core"></i>
+
+              <div class="instr__spons-add">
+                <svg class="icon icon-build"><use xlink:href="img/sprite.svg#icon-build"></use></svg>
+
+                <p>Add Company</p>
+
+              </div>
+              <div class="instr__spons-cursor cursor js-cursor"></div>
+
+              <div class="instr__spons-item instr__spons-item_sprout">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>Sprout.io</p>
+              </div>
+
+              <div class="instr__spons-item instr__spons-item_terra">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>TerraTek</p>
+              </div>
+
+              <div class="instr__spons-item instr__spons-item_soc-inst">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>Social Institute</p>
+              </div>
+
+              <div class="instr__spons-item instr__spons-item_zsoc">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>Zsocial</p>
+              </div>
+
+              <div class="instr__spons-item instr__spons-item_cloud">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>CloudSync </p>
+              </div>
+
+              <div class="instr__spons-item instr__spons-item_core">
+                <div class="disc">
+                  <i></i>
+                </div>
+                <p>CoreMarketing</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="instr__mob-box"></div>
+          <div class="instr__spons-text-wrap">
+            <h3> 2. Onboard sponsors and exhibitors</h3>
+            <p>Add companies to your lead retrieval, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+
+        </div>
+        <div class="instr__stat">
+          <div class="instr__stat-box">
+
+            <!--start stat item-->
+            <div class="instr__stat-item">
+              <div class="instr__stat-logo instr__stat-item_sprout">
+                <i></i>
+                <p>Sprout.io</p>
+                <div data-width="100%" class="instr__stat-progress"></div>
+              </div>
+              <span class="instr__stat-leads">297 Leads</span>
+            </div>
+            <!--end stat item  -->
+
+            <!--start stat item-->
+            <div class="instr__stat-item instr__stat-item_core">
+              <div class="instr__stat-logo ">
+                <i></i>
+                <p>CoreMarketing</p>
+              </div>
+              <span class="instr__stat-leads">210 Leads</span>
+              <div class="instr__stat-progress" data-width="70%"></div>
+            </div>
+            <!--end stat item  -->
+
+            <!--start stat item-->
+            <div class="instr__stat-item instr__stat-item_soc-inst">
+              <div class="instr__stat-logo ">
+                <i></i>
+                <p>Social Institute</p>
+              </div>
+              <p class="instr__stat-leads">201 Leads</p>
+              <div class="instr__stat-progress" data-width="65%"></div>
+            </div>
+            <!--end stat item  -->
+
+            <!--start stat item-->
+            <div class="instr__stat-item instr__stat-item_zsoc">
+              <div class="instr__stat-logo ">
+                <i></i>
+                <p>Zsocial </p>
+              </div>
+              <span class="instr__stat-leads">156 Leads</span>
+              <div class="instr__stat-progress" data-width="47%"></div>
+            </div>
+            <!--end stat item  -->
+
+            <!--start stat item-->
+            <div class="instr__stat-item instr__stat-item_terra">
+              <div class="instr__stat-logo ">
+                <i></i>
+                <p>TerraTek</p>
+              </div>
+              <span class="instr__stat-leads">120 Leads</span>
+              <div class="instr__stat-progress" data-width="36%"></div>
+            </div>
+            <!--end stat item  -->
+
+            <!--start stat item-->
+            <div class="instr__stat-item instr__stat-item_cloud">
+              <div class="instr__stat-logo ">
+                <i></i>
+                <p>CloudSync</p>
+              </div>
+              <span class="instr__stat-leads">101 Leads</span>
+              <div class="instr__stat-progress" data-width="31%"></div>
+            </div>
+            <!--end stat item  -->
+          </div>
+          <div class="instr__stat-text-wrap">
+            <h3>3. See how your exhibitors are doing</h3>
+            <p>Check statistics of your exhibitors. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--end instr-->
+
+    <!--start estimate-->
+    <div class="estimate">
+      <div class="estimate__inner">
+        <h2>Great way to boost your event revenue</h2>
+        <h6>Use one of two ways to make money with Lead Retrieval: Flat Fee or Ravenue Share. Choose what will be perfect to you: </h6>
+
+        <!--start radio-btns-->
+        <div class="estimate__btns">
+          <button class="estimate__btn js-flat-trig is-active">FLAT FEE</button>
+          <button class="estimate__btn js-revenue-trig">REVENUE SHARE</button>
+        </div>
+        <!--end radio-btns-->
+
+        <div class="estimate__block-holder">
+          <div class="estimate__flat">
+            <!--start calc-->
+            <h3>Get an estimate of your profit:</h3>
+
+            <div class="estimate__calc">
+              <div class="estimate__price">
+                <p class="estimate__calc-title">LICENSE PRICE</p>
+                <div class="estimate__input-wrap">
+                  <input class="estimate__input js-flat-price" type="number" min="150" maxlength="5" value="450">
+                  <i><svg class="icon icon-dollar"><use xlink:href="img/sprite.svg#icon-dollar"></use></svg>
+</i>
+                </div>
+                <p class="estimate__calc-text">We will charge $150/company from your license price.</p>
+              </div>
+
+              <i class="estimate__calc-cross"><svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+</i>
+
+              <div class="estimate__companies">
+                <p class="estimate__calc-title">COMPANIES</p>
+                <input class=" js-flat-comp estimate__input estimate__input_companies" type="number" value="80">
+              </div>
+
+              <i class="estimate__calc-equals"><svg class="icon icon-equals"><use xlink:href="img/sprite.svg#icon-equals"></use></svg>
+</i>
+
+              <div class="estimate__total">
+                <p class="estimate__calc-title estimate__calc-title_total">ESTIMATED REVENUE</p>
+                <p class="estimate__total-ammount ">$ <span class="js-flat-total">24000.00</span></p>
+              </div>
+
+            </div>
+            <!--end calc-->
+          </div>
+          <div class="estimate__revenue">
+            <!--start calc-->
+            <h3>Get an estimate of your profit:</h3>
+
+            <div class="estimate__calc">
+              <div class="estimate__price">
+                <p class="estimate__calc-title">LICENSE PRICE</p>
+                <div class="estimate__input-wrap">
+                  <input class="estimate__input" type="text" value="450">
+                  <i><svg class="icon icon-dollar"><use xlink:href="img/sprite.svg#icon-dollar"></use></svg>
+</i>
+                </div>
+                <p class="estimate__calc-text">Attendify collects payment and shares 30% with you!</p>
+              </div>
+
+              <i class="estimate__calc-cross"><svg class="icon icon-cross"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+</i>
+
+              <div class="estimate__companies">
+                <p class="estimate__calc-title">COMPANIES</p>
+                <input class="estimate__input estimate__input_companies" type="text" value="80">
+              </div>
+
+              <i class="estimate__calc-equals"><svg class="icon icon-equals"><use xlink:href="img/sprite.svg#icon-equals"></use></svg>
+</i>
+
+              <div class="estimate__total">
+                <p class="estimate__calc-title estimate__calc-title_total">ESTIMATED REVENUE</p>
+                <p class="estimate__total-ammount">$10800.00</p>
+              </div>
+
+            </div>
+            <!--end calc-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--end estimate-->
+
+    <!-- begin try  -->
+    <div class="try">
+      <div class="try__inner">
+        <h2>Let’s do this</h2>
+        <h6>Build your app today, publish for $999</h6>
+        <a href="#" class="btn"><span>START BUILDING FREE</span></a>
+        <p>or <a href="#" class="try__link">Request a Demo</a></p>
+      </div>
+    </div>
+    <!-- end try -->
+    <!-- begin footer  -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__list">
+          <div class="footer__title">PRODUCT</div>
+          <ul>
+            <li><a href="#" class="footer__link">Mobile Event Apps</a></li>
+            <li><a href="#" class="footer__link">Lead Retrieval</a></li>
+            <li><a href="#" class="footer__link">Event Websites</a></li>
+            <li><a href="#" class="footer__link">How-it-works</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Customers</a></li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <div class="footer__title">ABOUT</div>
+          <ul>
+            <li><a href="#" class="footer__link">Company</a></li>
+            <li><a href="#" class="footer__link">Jobs</a><span class="btn-hiring">WE’RE HIRING</span></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__list">
+          <div class="footer__title">RESOURCES</div>
+          <ul>
+            <li><a href="#" class="footer__link">Developers/API</a></li>
+            <li><a href="#" class="footer__link">Support Center</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <a href="#" class="btn-small"><span>SIGN UP FOR FREE</span></a>
+          <div class="social">
+            <div class="social__title">Follow Us:</div>
+            <ul>
+              <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+</a></li>
+              <li><a href="#"><svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+</a></li>
+              <li><a href="#"><svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg>
+</a></li>
+              <li><a href="#"><svg class="icon icon-google"><use xlink:href="img/sprite.svg#icon-google"></use></svg>
+</a></li>
+            </ul>
+          </div>
+          <p class="copy">© 2016 Attendify. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    </div>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+
+  </body>
+
+</html>
